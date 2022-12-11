@@ -1,0 +1,16 @@
+[project]
+name = "aoc2022"
+version = "0.0.1"
+description = "Advent of Code 2022 puzzles"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    ".", "src"
+]
