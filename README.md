@@ -16,6 +16,9 @@ pip install -r requirements.txt
 source .venv/bin/activate
 cd src/aoc2022
 pyton dec_1.py
+
+# or - issue with static input file import
+python -m src.aoc2022.dec_1
 ```
 
 ## Run tests
