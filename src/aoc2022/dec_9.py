@@ -1,3 +1,4 @@
+import os
 import re
 
 
@@ -124,6 +125,6 @@ def test():
 
 
 if __name__ == '__main__':
-    main('../../inputs/dec_9_input.txt')
+    main(os.path.dirname(__file__) + '/../../inputs/dec_9_input.txt')
     #test()
 

@@ -1,3 +1,6 @@
+import os
+
+
 def render(x_register_by_cycles):
     line = ["" for _ in range(40)]
     for i in range(len(x_register_by_cycles)):
@@ -45,4 +48,4 @@ def part_1(instructions):
 
 
 if __name__ == '__main__':
-    main('../../inputs/dec_10_input.txt')
+    main(os.path.dirname(__file__) + '/../../inputs/dec_10_input.txt')

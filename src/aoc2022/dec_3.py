@@ -1,3 +1,6 @@
+import os
+
+
 def get_item_priority(item):
     priority = ord(item)
     if priority > 95:
@@ -31,4 +34,4 @@ def main(input_file):
 
 
 if __name__ == '__main__':
-    main('../../inputs/dec_3_input.txt')
+    main(os.path.dirname(__file__) + '/../../inputs/dec_3_input.txt')

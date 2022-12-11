@@ -1,3 +1,6 @@
+import os
+
+
 def main(input_file):
     with open(input_file) as file:
         for line in file:
@@ -13,4 +16,4 @@ def find_sequence_index(line, length):
 
 
 if __name__ == '__main__':
-    main('../../inputs/dec_6_input.txt')
+    main(os.path.dirname(__file__) + '/../../inputs/dec_6_input.txt')

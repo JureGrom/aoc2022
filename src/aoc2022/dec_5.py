@@ -9,6 +9,7 @@
 [H] [M] [N] [Z] [M] [C] [M] [P] [P]
  1   2   3   4   5   6   7   8   9
 """
+import os
 import re
 from copy import copy
 
@@ -65,4 +66,4 @@ def main(input_file):
 
 
 if __name__ == '__main__':
-    main('../../inputs/dec_5_input.txt')
+    main(os.path.dirname(__file__) + '/../../inputs/dec_5_input.txt')

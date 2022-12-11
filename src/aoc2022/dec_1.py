@@ -1,3 +1,6 @@
+import os
+
+
 def dec_1_inc(x):
     return x + 1
 
@@ -36,4 +39,4 @@ def main(input_file):
 
 
 if __name__ == '__main__':
-    main('../../inputs/dec_1_input.txt')
+    main(os.path.dirname(__file__) + '/../../inputs/dec_1_input.txt')

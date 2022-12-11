@@ -1,4 +1,5 @@
 import json
+import os
 import re
 
 
@@ -78,4 +79,4 @@ def main(input_file):
 
 
 if __name__ == '__main__':
-    main('../../inputs/dec_7_input.txt')
+    main(os.path.dirname(__file__) + '/../../inputs/dec_7_input.txt')

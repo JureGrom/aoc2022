@@ -1,3 +1,6 @@
+import os
+
+
 def main(input_file):
     with open(input_file) as file:
         pairs_with_containment = 0
@@ -17,4 +20,4 @@ def main(input_file):
 
 
 if __name__ == '__main__':
-    main('../../inputs/dec_4_input.txt')
+    main(os.path.dirname(__file__) + '/../../inputs/dec_4_input.txt')

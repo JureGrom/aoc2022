@@ -1,3 +1,6 @@
+import os
+
+
 def main(input_file):
     tree_map = []
     tree_visibility_map = []
@@ -76,4 +79,4 @@ def count_visible_trees(map_height, map_width, tree_map, tree_visibility_map):
 
 
 if __name__ == '__main__':
-    main('../../inputs/dec_8_input.txt')
+    main(os.path.dirname(__file__) + '/../../inputs/dec_8_input.txt')

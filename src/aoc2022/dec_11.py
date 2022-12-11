@@ -1,4 +1,5 @@
 import copy
+import os
 
 
 def get_inspections(monkeys):
@@ -64,4 +65,4 @@ def monkey_business(monkeys, rounds, worry_level):
 
 
 if __name__ == '__main__':
-    main('../../inputs/dec_11_input.txt')
+    main(os.path.dirname(__file__) + '/../../inputs/dec_11_input.txt')
