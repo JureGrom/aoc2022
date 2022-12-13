@@ -1,4 +1,5 @@
 import os
+from functools import cmp_to_key
 
 
 def is_pair_ordered(left, right):
@@ -48,6 +49,15 @@ def get_pairs(file_name):
     return pairs
 
 
+def compare_pair(left, right):
+    if is_pair_ordered(left, right):
+        return -1
+    elif is_pair_ordered(right, left):
+        return 1
+    else:
+        return 0
+
+
 def main(file_name):
     pairs = get_pairs(file_name)
     ordered_pair_index_sum = 0
@@ -57,6 +67,17 @@ def main(file_name):
             ordered_pair_index_sum += i + 1
 
     print(f"Sum of ordered pairs indexes is {ordered_pair_index_sum}")
+
+    packets = []
+    for pair in pairs:
+        packets.append(pair[0])
+        packets.append(pair[1])
+    key1 = [[2]]
+    key2 = [[6]]
+    packets += [key1, key2]
+    packets = sorted(packets, key=cmp_to_key(compare_pair))
+    decoder_key = (packets.index(key1) + 1) * (packets.index(key2) + 1)
+    print(f"Decoder key is {decoder_key}")
 
 
 if __name__ == '__main__':
