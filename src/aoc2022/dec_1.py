@@ -1,10 +1,6 @@
 import os
 
 
-def dec_1_inc(x):
-    return x + 1
-
-
 def main(input_file):
     with open(input_file) as file:
         max_calories = 0
